@@ -10,10 +10,93 @@
     "owner" : {
       "id" : "salvatore.damicis@quantyca.it",
       "name" : "Salvatore D'amicis"
-    }
+    },
+    "contactPoints" : [ {
+      "name" : "Tech owner",
+      "address" : "nome.cognome@mail.it",
+      "channel" : "mail",
+      "description" : "Data Product Tech owner"
+    } ]
   },
   "interfaceComponents" : {
-    "inputPorts" : [ ],
-    "outputPorts" : [ ]
+    "inputPorts" : [ {
+      "fullyQualifiedName" : "urn:dpds:crifPlayground:dataproducts:salvatoreDamicisProductAnag:1:inputports:erp",
+      "name" : "erp",
+      "version" : "1.0.0",
+      "displayName" : "erp",
+      "description" : "",
+      "promises" : {
+        "servicesType" : ""
+      },
+      "dependsOn" : "blindata:systems:salvatoredamicis-erp"
+    } ],
+    "outputPorts" : [ {
+      "fullyQualifiedName" : "urn:dpds:crifPlayground:dataproducts:salvatoreDamicisProductAnag:1:outputports:dwh",
+      "name" : "dwh",
+      "version" : "1.0.0",
+      "displayName" : "dwh",
+      "description" : "",
+      "promises" : {
+        "platform" : "PostgreSQL:salvatoredamicis-dwh",
+        "api" : {
+          "fullyQualifiedName" : "",
+          "name" : "salvatoreDamicisProductAnagdwhApi",
+          "version" : "1.0.0",
+          "specification" : "datastoreapi",
+          "specificationVersion" : "1.0.0",
+          "definition" : {
+            "schema" : {
+              "databaseSchemaName" : "cdm",
+              "tables" : [ {
+                "version" : "1.0.0",
+                "specification" : "json-schema",
+                "specificationVersion" : "1",
+                "definition" : {
+                  "name" : "dim_product",
+                  "displayName" : "dim_product",
+                  "description" : "Dimensional table for product sku master data",
+                  "physicalType" : "BASE_TABLE",
+                  "properties" : {
+                    "sku_id" : {
+                      "name" : "sku_id",
+                      "displayName" : "sku_id",
+                      "physicalType" : "integer",
+                      "description" : "",
+                      "ordinalPosition" : 1
+                    }
+                  },
+                  "s-context" : {
+                    "s-base" : "https://demo.blindata.io/logical/namespaces/name/salvatoredamicisRetail#",
+                    "s-type" : "[ProductSku]",
+                    "sku_id" : "[ProductSku].productSkuIdentifier"
+                  }
+                }
+              } ]
+            }
+          }
+        }
+      }
+    } ]
+  },
+  "internalComponents" : {
+    "lifecycleInfo" : {
+      "prod" : [ {
+        "name" : "release",
+        "order" : 1,
+        "service" : {
+          "$href" : "dummy-executor"
+        },
+        "template" : {
+          "name" : "release",
+          "specification" : "",
+          "specificationVersion" : "",
+          "definition" : { },
+          "description" : ""
+        },
+        "configurations" : {
+          "params" : { }
+        }
+      } ]
+    }
   }
 }
