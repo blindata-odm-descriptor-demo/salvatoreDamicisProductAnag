@@ -1,0 +1,19 @@
+{
+  "dataProductDescriptor" : "1.0.0",
+  "info" : {
+    "fullyQualifiedName" : "urn:dpds:crifPlayground:dataproducts:salvatoreDamicisProductAnag:1",
+    "domain" : "salvatoredamicisRetail",
+    "name" : "salvatoreDamicisProductAnag",
+    "displayName" : "Salvatore Damicis Product Anag",
+    "description" : "Data Product that manages product master data",
+    "version" : "1.0.0",
+    "owner" : {
+      "id" : "salvatore.damicis@quantyca.it",
+      "name" : "Salvatore D'amicis"
+    }
+  },
+  "interfaceComponents" : {
+    "inputPorts" : [ ],
+    "outputPorts" : [ ]
+  }
+}
