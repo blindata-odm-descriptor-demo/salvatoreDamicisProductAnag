@@ -6,7 +6,7 @@
     "name" : "salvatoreDamicisProductAnag",
     "displayName" : "Salvatore Damicis Product Anag",
     "description" : "Data Product that manages product master data",
-    "version" : "1.0.0",
+    "version" : "1.0.1",
     "owner" : {
       "id" : "salvatore.damicis@quantyca.it",
       "name" : "Salvatore D'amicis"
@@ -16,6 +16,11 @@
       "address" : "nome.cognome@mail.it",
       "channel" : "mail",
       "description" : "Data Product Tech owner"
+    }, {
+      "name" : "Domain owner",
+      "address" : "nome.cognome2@mail.it",
+      "channel" : "mail",
+      "description" : "Domain Owner"
     } ]
   },
   "interfaceComponents" : {
@@ -48,7 +53,7 @@
             "schema" : {
               "databaseSchemaName" : "cdm",
               "tables" : [ {
-                "version" : "1.0.0",
+                "version" : "1.0.1",
                 "specification" : "json-schema",
                 "specificationVersion" : "1",
                 "definition" : {
