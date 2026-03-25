@@ -79,8 +79,8 @@
                   },
                   "s-context" : {
                     "s-base" : "https://demo.blindata.io/logical/namespaces/name/salvatoredamicisRetail#",
-                    "s-type" : "[ProductSku]",
-                    "sku_id" : "[ProductSku].productSkuIdentifier"
+                    "sku_id" : "[ProductSku].productSkuIdentifier",
+                    "s-type" : "[ProductSku]"
                   }
                 }
               } ]
