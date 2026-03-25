@@ -68,6 +68,13 @@
                       "physicalType" : "integer",
                       "description" : "",
                       "ordinalPosition" : 1
+                    },
+                    "sku_code" : {
+                      "name" : "sku_code",
+                      "displayName" : "sku_code",
+                      "physicalType" : "varchar",
+                      "description" : "",
+                      "ordinalPosition" : 2
                     }
                   },
                   "s-context" : {
