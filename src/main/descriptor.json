@@ -6,7 +6,7 @@
     "name" : "salvatoreDamicisProductAnag",
     "displayName" : "Salvatore Damicis Product Anag",
     "description" : "Data Product that manages product master data",
-    "version" : "1.0.2",
+    "version" : "1.0.3",
     "owner" : {
       "id" : "salvatore.damicis@quantyca.it",
       "name" : "Salvatore D'amicis"
@@ -53,7 +53,7 @@
             "schema" : {
               "databaseSchemaName" : "cdm",
               "tables" : [ {
-                "version" : "1.0.2",
+                "version" : "1.0.3",
                 "specification" : "json-schema",
                 "specificationVersion" : "1",
                 "definition" : {
